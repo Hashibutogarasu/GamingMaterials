@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "gaming_materials",
+	"version": "${version}",
+	"name": "Gaming Materials",
+	"description": "This mod adds new materials to the game!",
+	"authors": [
+		"Karasu Lab"
+	],
+	"contact": {
+		"homepage": "https://www.karasu256.com/mods/gaming-materials",
+		"sources": "https://github.com/Hashibutogarasu/GamingMaterials"
+	},
+	"license": "MIT",
+	"icon": "assets/gaming-materials/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"karasu_lab.gaming_materials.GamingMaterials"
+		],
+		"client": [
+			"karasu_lab.gaming_materials.GamingMaterialsClient"
+		],
+		"fabric-datagen": [
+			"karasu_lab.gaming_materials.GamingMaterialsDataGenerator"
+		]
+	},
+	"mixins": [
+		"gaming-materials.mixins.json",
+		{
+			"config": "gaming-materials.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "karasu_lab.gaming_materials.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
